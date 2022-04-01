@@ -58,16 +58,19 @@ while sysopen == True:
         else:
             print("That user doesn't exist.")
             time.sleep(1.5)
-
     while Toopen == True:
-        Toopen = False
-        print("Erik!")
-        print("Hello, what you want to do today?")
-        print("Type list to list available commands and apps.")
+        def tooopen():
+            Toopen = False
+            print("Erik!")
+            print("Hello, what you want to do today?")
+            print("Type list to list available commands and apps.")
 
-        command = input("")
-        if command == ("list"):
-            print("calculator")
+            command = input("")
+            if command == ("list"):
+                cls()
+                print("calculator")
 
-        if command == ("calculator"):
-            print("test")
+            if command == ("calculator"):
+                cls()
+                print("test")
+        tooopen()
